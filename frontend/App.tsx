@@ -1,4 +1,5 @@
 import Contact from "./src/components/Contact"
+import ContactForm from "./src/components/ContactForm"
 import Experiences from "./src/components/Experiences"
 import Header from "./src/components/Header"
 
@@ -15,6 +16,8 @@ function App() {
       <Header student={student} degree={degree} points={points} />
       <Experiences experienceOne={experienceOne} experienceTwo={experienceTwo} />
       <Contact email={email} />
+      <ContactForm />
+
     </div>
   )
 }
