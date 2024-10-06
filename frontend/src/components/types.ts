@@ -18,3 +18,20 @@ export type Project = z.infer<typeof ProjectSchema>;
 
 // Oppdatert type-definisjon basert på Zod-skjemaet
 export type CreateProject = z.infer<typeof ProjectSchema>;
+
+export type ExperienceProps = {
+  id?: number;
+  description: string;
+}
+
+export type ExperiencesProps = {
+  experiences : ExperienceProps[];
+}
+
+export type ProjectProps = {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  createdAt?: Date;
+}

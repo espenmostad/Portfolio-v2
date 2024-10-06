@@ -1,21 +1,23 @@
 [
-    {
-        "id":"46685e7d-36c2-42b5-9b87-36c5ccfd3085",
-        "title":"SQL",
-        "description":"My first database project",
-        "created": "2024-29-4"
-    },
-    {
-        "id":"46375e7d-36d2-42b5-9b87-36c5ccfd3085",
-        "title":"Python",
-        "description":"Innføring i programmering",
-        "created": "2024-29-4"
-    },
-    {
-        "id":"46685e7d-36c2-42b5-9b87-36c3ecfd3085",
-        "title":"Java",
-        "description":"Objectorientert programmering",
-        "created": "2024-29-4"
-    }
-
+  {
+    "id": "46685e7d-36c2-42b5-9b87-36c5ccfd3085",
+    "title": "SQL",
+    "description": "My first database project",
+    "category": "Databases",
+    "created": "2024-29-4"
+  },
+  {
+    "id": "46375e7d-36d2-42b5-9b87-36c5ccfd3085",
+    "title": "Python",
+    "description": "Innføring i programmering",
+    "category": "Programming",
+    "created": "2024-29-4"
+  },
+  {
+    "id": "46685e7d-36c2-42b5-9b87-36c3ecfd3085",
+    "title": "Java",
+    "description": "Objectorientert programmering",
+    "category": "Programming",
+    "created": "2024-29-4"
+  }
 ]

@@ -63,7 +63,7 @@ const createProject = (event: FormEvent<HTMLFormElement>) => {
                   onChange={updateMessage}
                   value={message} /><br />
             </label>
-            <button type="submit">Create project</button>
+            <button type="submit">Send message</button>
         </form>
 
         {/* Conditional rendering of messages */}

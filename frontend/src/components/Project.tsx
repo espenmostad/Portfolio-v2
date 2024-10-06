@@ -1,12 +1,14 @@
-import React from "react";
-import { Project as ProjectType} from "./types";
+import { ProjectProps } from './types';
+import type { PropsWithChildren } from "react";
 
-export default function Project(data: ProjectType) {
-    const {title, description} = data;
-
+export default function Project(props: Readonly<PropsWithChildren<ProjectProps>>) {
+    const { title, category, description, children } = props
     return (
-        <React.Fragment>
-            <p>{title}</p> <p>{description}</p>
-        </React.Fragment>
-    );
+       <article className='project'>
+           <h3>{title}</h3>
+           <p>Category: {category}</p>
+           <p>{description}</p>
+           {children}
+       </article>
+    )
 }
