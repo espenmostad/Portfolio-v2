@@ -1,0 +1,49 @@
+:root {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --bg-color: #c1c1c1;
+    --article-bgcolor: #DCDCDC;
+    --text-color: #000000;
+    --link-color: #333333;
+    --header-bg: #94c0de;
+    --body-bg: #8aacd2;
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background-color: var(--bg-color);
+  }
+
+  header{
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    padding: 10px 20px;
+  }
+
+  section{
+    background-color: var(--article-bgcolor);
+    margin: 10px;
+    color: var(--text-color);
+    padding: 10px 20px;
+  }
+
+  section ul li{
+    list-style: none;
+  }
+
+  .projectlist li{
+    list-style: none;
+  }

@@ -45,7 +45,8 @@ const createProject = (event: FormEvent<HTMLFormElement>) => {
 
     
     return (
-      <React.Fragment>
+      <section>
+        <h2>Send a message</h2>
         <form onSubmit={newMessage}>
             <label htmlFor="name">
                 Ditt navn:<br />
@@ -83,7 +84,7 @@ const createProject = (event: FormEvent<HTMLFormElement>) => {
         </>
       )}
   
-      </React.Fragment> 
+      </section> 
     );
   }
 

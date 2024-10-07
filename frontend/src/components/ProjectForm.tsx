@@ -22,9 +22,9 @@ export default function ProjectForm(props: CreateProjectFormProps){
 
     return (
       <section>
-        <h3>Add new project</h3>
+        <h2>Add new project</h2>
         <form onSubmit={createNewProject} className="project-form">
-                <h2>Add project</h2>
+         
                 <label htmlFor="title">Title:</label><br />
                 <input 
                     type="text"

@@ -6,8 +6,8 @@ export default function Project(props: Readonly<PropsWithChildren<ProjectProps>>
     return (
        <article className='project'>
            <h3>{title}</h3>
-           <p>Category: {category}</p>
            <p>{description}</p>
+           <p>Category: {category}</p>
            {children}
        </article>
     )

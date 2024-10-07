@@ -1,3 +1,4 @@
+import "/src/css/App.css";
 import Contact from "./src/components/Contact"
 import ContactForm from "./src/components/ContactForm"
 import Experiences from "./src/components/Experiences"
@@ -19,6 +20,7 @@ const experiences: ExperienceProps[] = [
 const email = 'student@hiof.no'
 
 function App() {
+  console.log("Email in App:", email);  // Debug log
   const [projectsList, setProjectsList] = useState<ProjectProps[]>([]);
 
   const readDataFromApi = () => {
@@ -87,7 +89,7 @@ function App() {
 
   return (
     <div>
-      <Header student={student} degree={degree} points={points} />
+      <Header student={student} degree={degree} points={points} email={email} />
       <Experiences experiences={experiences}>				
 			</Experiences>
       <Contact email={email} />

@@ -8,20 +8,21 @@ export default function Projects(
 ) {
 	const {children, onRemoveProjectButtonClicked, projects } = props;
 	return (
-		<section>
+		<section className="projects">
 			<h2>Projects</h2>
 			{children}
 			{projects.length === 0 ? (
 				<p>No projects available.</p>
 			) : (
 				<>
-					<ul className="project-ul">
+					<ul className="projectlist">
 						{projects.map((project: ProjectProps) => (
 							<li key={project.id}>
 								<Project
 									id={project.id}
 									title={project.title}
 									description={project.description}
+                                    category={project.category}
 								>
 									<button
 										onClick={() =>
@@ -36,7 +37,7 @@ export default function Projects(
 							</li>
 						))}
 					</ul>
-                    Total projects per category:
+                    <strong>Number of projects per category:</strong>
 					<ul>
 						{Object.entries(
 							projects.reduce((prev, curr) => {
